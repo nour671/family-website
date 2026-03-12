@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>  التطبيق الأول لتنظيم وتوثيق العائلة الخليجية</title>
+  <meta name="description" content="تطبيق عائلي خليجي يجمع شجرة النسب، الذكريات، التقويم، المهام في مكان واحد آمن." />
+
+  <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap 5.3 RTL + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style-app.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<!-- <style>
+    
+.whatsapp-chat-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+  animation: float 6s ease-in-out infinite;
+}
+
+.whatsapp-chat-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background: #6CC0C8;
+  border-radius: 50%;
+  box-shadow: 0 5px 30px rgba(108,192,200,0.5);
+  transition: all 0.4s ease;
+
+}
+
+
+
+.whatsapp-chat-btn a:active {
+  transform: scale(1.05);
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+
+@media (max-width: 768px) {
+  .whatsapp-chat-btn {
+    bottom: 15px;
+    right: 15px;
+  }
+  .whatsapp-chat-btn a {
+    width: 55px;
+    height: 55px;
+  }
+  .whatsapp-chat-btn svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+</style> -->
+<!-- <style>
+  .slide::after {
+    content: "اضغط لرؤية التطبيق من الداخل";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f5f7f7;
+    color: #222;
+    padding: 12px 32px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: all 0.5s ease;
+    text-align: center;
+  }
+  .slide:hover::after {
+    opacity: 1;
+    bottom: 30px;
+    cursor: pointer;
+  }
+</style> -->
+
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top " id="mainNavbar" style="background: rgba(255,255,255,0.95); ">
+  <div class="container position-relative">
+
+
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/family-logo3-removebg-preview.png" alt="شعار العائلة" width="45" height="45" class="rounded-circle">
+      <span class="fw-bold text-primary d-none d-md-inline" style="font-size: 1.3rem;">العائلة</span>
+    </a>
+
+
+    <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-2 gap-lg-4">
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3 active" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="about-us.html">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="family-app.html">التطبيقات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="contact-us.html">تواصل معنا</a>
+        </li>
+      </ul>
+
+    
+       <a href="booking.html" class="btn d-none btn btn-primary d-lg-block" id="loginTransparent"
+              > احجز تطبيقك الآن</a
+        >
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" style="width: 280px;">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title fw-bold text-primary">القائمة</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body pt-4">
+    <ul class="navbar-nav gap-3">
+      <li><a class="nav-link text-dark fs-5" href="index.html">الرئيسية</a></li>
+      <li><a class="nav-link text-dark fs-5" href="about-us.html">من نحن</a></li>
+      <li><a class="nav-link text-dark fs-5" href="family-app.html">التطبيقات</a></li>
+      <li><a class="nav-link text-dark fs-5" href="contact-us.html">تواصل معنا</a></li>
+      <li class="mt-4">
+        <a href="booking.html" class=" btn btn-primary w-100 " 
+              > احجز تطبيقك الآن</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <!-- Hero -->
+  <section class="app-hero " style="   " data-aos="fade-down">
+   <div class="row justify-content-center text-center mb-6">
+      <div class="col-lg-8 mb-5">
+        <h2 class="display-5 fw-bold mb-4">
+          اكتشف تطبيقات <span class="text-primary">«العائلة»</span> 
+        </h2>
+        <p class="lead opacity-85">
+          تصفّح أجمل وأسهل واجهات التطبيق التي صُممت خصيصًا للعائلات العربية الكبيرة
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+<section class="py-lg-7 mt-5 bg-white position-relative overflow-hidden">
+  <div class="container ">
+    
+
+    <!-- 3D Slider -->
+    <div class="scene" style="perspective: 1500px; height: 580px;">
+      <div class="carousel-3d" id="appSlider">
+
+        <div class="slide">
+          <div class="phone-mockup">
+            <img src="./images/elmaagl.png" alt=" المعجل">
+          </div>
+        </div>
+
+        
+        
+        <div class="slide">
+          <div class="phone-mockup">
+            <img src="./images/app40.png" alt="  البابطين">
+          </div>
+        </div>
+
+        
+        <div class="slide">
+          <div class="phone-mockup">
+            <img src="./images/splash.png" alt=" الموسى">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="phone-mockup">
+            <img src="./images/elmaagl.png" alt=" المعجل">
+          </div>
+        </div>
+        
+        
+        <div class="slide">
+          <div class="phone-mockup">
+            <img src="./images/app40.png" alt="  البابطين">
+          </div>
+        </div>
+
+        
+        <div class="slide">
+          <div class="phone-mockup">
+            <img src="./images/splash.png" alt=" الموسى">
+          </div>
+        </div>
+
+
+      </div>
+
+      
+      <button class="slider-btn prev" onclick="moveSlide(-1)">❮</button>
+      <button class="slider-btn next" onclick="moveSlide(1)">❯</button>
+
+    </div>
+    
+
+<div class="slider-caption text-center mt-5" data-aos="fade-up">
+
+  <h3 id="appName" 
+      class="fw-bold mb-4 text-dark" 
+      style="font-size: 2.8rem !important; color: #1a1a1a !important; opacity: 1 !important; visibility: visible !important;">
+    تطبيق المعجل
+  </h3>
+
+  <p class="lead text-muted mb-4">
+    تطبيق العائلة الرسمي لعائلة <span id="familyName" style="color: #333 !important; font-weight: 600;">المعجل</span>
+  </p>
+
+  <div id="downloadButtons" class="download-btn d-flex justify-content-center gap-4 flex-wrap mt-4">
+
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="pt-5 mt-5 pb-2 text-white">
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <img src="images/family-logo3-removebg-preview.png" alt="عائلتي" width="80" class="mb-3">
+          <p>تطبيق العائلة يحافظ على الترابط والذكريات بأمان تام.</p>
+        </div>
+        <div class="col-lg-4">
+          <h5>روابط سريعة</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50">سياسة الخصوصية</a></li>
+            <li><a href="#" class="text-white-50">شروط الاستخدام</a></li>
+            <li><a href="#" class="text-white-50">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>تابعنا</h5>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="text-center mb-0">&copy; 2025 Puresoft - جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <div class="whatsapp-chat-btn" style=" position: fixed;
+  bottom: 25px;
+  left: 25px;
+  z-index: 9999;
+  animation: float 6s ease-in-out infinite;">
+  <a href="https://wa.me/966501234567" target="_blank" aria-label="تواصل معنا عبر واتساب">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="38" height="38" fill="#fff">
+      <path d="M400 26.2c-193.3 0-350 156.7-350 350 0 136.2 77.9 254.3 191.5 312.1 15.4 8.1 31.4 15.1 48.1 20.8l-16.5 63.5c-2 7.8 5.4 14.7 13 12.1l229.8-77.6c14.6-5.3 28.8-11.6 42.4-18.7C672 630.6 750 512.5 750 376.2c0-193.3-156.7-350-350-350zm211.1 510.7c-10.8 26.5-41.9 77.2-121.5 77.2-79.9 0-110.9-51-121.6-77.4-2.8-6.8 5-13.4 13.8-11.8 76.2 13.7 147.7 13 215.3.3 8.9-1.8 16.8 4.8 14 11.7z"/>
+    </svg>
+  </a>
+</div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script1.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+  const appsData = [
+    { name: "المعجل",    family: "المعجل",    slug: "almaajel",   page: "almaajel.html?almaajel" },    
+    { name: "البابطين",  family: "البابطين",  slug: "albaptain",  page: "almaajel.html?albaptain" },
+    { name: "الموسى",    family: "الموسى",    slug: "almousa",    page: "almaajel.html?almousa" },
+    { name: "المعجل",    family: "المعجل",    slug: "almaajel",   page: "almaajel.html?almaajel" },
+    { name: "البابطين",  family: "البابطين",  slug: "albaptain",  page: "almaajel.html?albaptain" },
+    { name: "الموسى",    family: "الموسى",    slug: "almousa",    page: "almaajel.html?almousa" }
+  ];
+
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+
+  function updateSlider() {
+    slides.forEach((slide, i) => {
+      slide.className = 'slide';
+      const diff = i - currentIndex;
+      if (diff === 0) slide.classList.add('active');
+      else if (diff === -1 || diff === totalSlides - 1) slide.classList.add('prev');
+      else if (diff === 1 || diff === 1 - totalSlides) slide.classList.add('next');
+      else if (diff === -2 || diff === totalSlides - 2) slide.classList.add('far-prev');
+      else if (diff === 2 || diff === 2 - totalSlides) slide.classList.add('far-next');
+    });
+
+    const appIndex = currentIndex % appsData.length;
+    const app = appsData[appIndex];
+
+    document.getElementById("appName").textContent = `تطبيق ${app.name}`;
+    document.getElementById("familyName").textContent = app.family;
+
+
+     document.getElementById("downloadButtons").innerHTML = `
+      <a class="btn btn-outline-dark mx-2 mb-3 px-3 py-2 rounded-2 border-2" href="${app.appStore}" target="_blank">
+        <i class="bi bi-apple me-2 fs-4"></i> تحميل من App Store
+      </a>
+      <a class="btn btn-primary mx-2 mb-3 px-3 py-2 rounded-2" href="${app.googlePlay}" target="_blank">
+        <i class="bi bi-google-play me-2 fs-4"></i> تحميل من Google Play
+      </a>
+    `;
+
+ 
+    slides.forEach((slide, i) => {
+      const index = i % appsData.length;
+      const targetPage = appsData[index].page;
+
+      slide.style.cursor = "pointer";
+      slide.onclick = () => {
+        window.location.href = targetPage + (targetPage.includes('?') ? '&' : '?') + `family=${appsData[index].slug}`;
+      };
+    });
+  }
+
+  function moveSlide(n) {
+    currentIndex = (currentIndex + n + totalSlides) % totalSlides;
+    updateSlider();
+  }
+
+
+  setInterval(() => moveSlide(1), 7000);
+
+  updateSlider();
+</script>
+
+</body>
+</html>  

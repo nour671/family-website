@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>التطبيق الأول لتنظيم وتوثيق العائلة الخليجية</title>
+    <meta
+      name="description"
+      content="تطبيق عائلي خليجي يجمع شجرة النسب، الذكريات، التقويم، المهام في مكان واحد آمن."
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3 RTL + Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS Animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    
+    <!-- <style>
+
+
+.features {
+  padding: 120px 0; 
+  direction: rtl;
+  
+}
+
+.features .titles {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.features .titles h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2c3e50; 
+  margin-bottom: 25px;
+  position: relative;
+  animation-delay: 0.2s;
+}
+
+.lead {
+  font-size: 1.3rem !important;
+  font-weight: 500;
+}
+
+/*.features .titles h2::after {
+  content: '';
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(90deg, #4a90e2, #7fb3d5); 
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}*/
+
+.features .titles h3 {
+  font-size: 24px;
+  color: #7f8c8d;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+
+.features .swiper {
+  padding: 30px 0 80px;
+  overflow: hidden;
+}
+
+.features .swiper-slide {
+  background: #fff;
+  border-radius: 25px;
+  
+  overflow: hidden;
+  transition: all 0.5s ease;
+  height: auto;
+  margin: 20px 0;
+}
+
+.features .swiper-slide:hover {
+  transform: translateY(-8px);
+  
+}
+
+.feature-item {
+  margin-left: 20px;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+.feature-item img {
+  
+  width: 60px;
+  height: 60px;
+  margin-bottom: 18px;
+  filter: grayscale(0.3); 
+  transition: filter 0.3s;
+}
+
+.feature-item img:hover {
+  filter: grayscale(0);
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.feature-item p {
+  text-align: center;
+  font-size: 16px;
+  max-width: 70%;
+  margin: auto;
+  line-height: 1.9;
+  color: #95a5a6;
+  font-weight: 300;
+}
+
+.feature-mockup {
+  text-align: center;
+  padding: 10px;
+  max-width: 90% !important;
+  max-height: 90% !important;
+}
+
+.feature-mockup img {
+  max-width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(74, 144, 226, 0.15); 
+  transition: all 0.4s ease;
+  border: 1px solid #e8f4fd;
+}
+
+.feature-mockup img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 55px rgba(74, 144, 226, 0.25);
+}
+
+  .feature-mockup {
+    width: 60%;
+    height: 50%;
+    background: #222;
+    border-radius: 38px;
+    /* padding: 5px; */
+    position: relative;
+    border: 5px solid #111;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+  }
+
+
+
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: #bdc3c7;
+  opacity: 1;
+  margin: 0 8px !important;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: linear-gradient(90deg, #4a90e2, #7fb3d5);
+  transform: scale(1.4);
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 55px;
+  height: 55px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  color: var(--primary) !important;
+  margin-top: -30px;
+  transition: all 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: var(--primary);
+  color: white !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 22px !important;
+  font-weight: bold;
+}
+
+.feature-card .icon-circle {
+
+  width: 80px;
+  height: 70px;
+  margin: 0 auto 24px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.feature-card .icon-circle i {
+  font-size: 2rem !important;
+  color: #fff;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animated.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+
+@media (max-width: 768px) {
+  .features {
+    padding: 80px 0;
+  }
+  
+  .features .titles h2 {
+    font-size: 26px;
+  }
+  
+  .features .titles h3 {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  
+  .feature-item {
+    padding: 20px;
+    margin: 30px 25px;
+    border: 2px solid #ccc;
+    text-align: center !important;
+  }
+  
+  .feature-item img {
+    margin: 0 auto 20px;
+  }
+  
+  .feature-mockup {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; 
+  }
+  
+  .swiper-pagination {
+    bottom: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .features .titles h2 {
+    font-size: 28px;
+  }
+  
+  .feature-item h3 {
+    font-size: 22px;
+  }
+}
+    </style> -->
+  </head>
+  <body>
+    <!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg fixed-top " id="mainNavbar" style="background: rgba(255,255,255,0.95); ">
+  <div class="container position-relative">
+
+
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/family-logo3-removebg-preview.png" alt="شعار العائلة" width="45" height="45" class="rounded-circle">
+      <span class="fw-bold text-primary d-none d-md-inline" style="font-size: 1.3rem;">العائلة</span>
+    </a>
+
+
+    <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-2 gap-lg-4">
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3 active" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="about-us.html">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="family-app.html">التطبيقات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="contact-us.html">تواصل معنا</a>
+        </li>
+      </ul>
+
+    
+       <a href="booking.html" class="btn d-none btn btn-primary d-lg-block" id="loginTransparent"
+              > احجز تطبيقك الآن</a
+        >
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" style="width: 280px;">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title fw-bold text-primary">القائمة</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body pt-4">
+    <ul class="navbar-nav gap-3">
+      <li><a class="nav-link text-dark fs-5" href="index.html">الرئيسية</a></li>
+      <li><a class="nav-link text-dark fs-5" href="about-us.html">من نحن</a></li>
+      <li><a class="nav-link text-dark fs-5" href="family-app.html">التطبيقات</a></li>
+      <li><a class="nav-link text-dark fs-5" href="contact-us.html">تواصل معنا</a></li>
+      <li class="mt-4">
+        <a href="booking.html" class=" btn btn-primary w-100 " 
+              > احجز تطبيقك الآن</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <!-- hero section -->
+
+    <section id="hero" class="hero section dark-background">
+      <div
+        id="hero-carousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img
+            src="./images/family000.jpg"
+            class="object-fit-cover"
+            style="object-position: 50% 30%"
+            alt="Hero Image 1"
+          />
+          <div class="container" data-aos="fade-left">
+            <h2 class="text-white">العائلة</h2>
+            <p class="hero-desc mb-4">
+              منصة تجمع أفراد العائلة وتوثّق الذكريات وشجرة النسب والاتصالات في
+              مكان واحد آمن.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+              <div class="download-btn">
+                <a class="btn btn-outline-light mx-2 mb-2" href="#features">
+                  <i class="bi bi-apple me-2"></i> تحميل من App Store
+                </a>
+                <a class="btn btn-primary mx-2 mb-2" href="#features">
+                  <i class="bi bi-google-play me-2"></i> تحميل من Google Play</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img
+            src="./images/family222.jpg"
+            class="object-fit-cover"
+            style="object-position: 50% 30%; min-height: 50vh"
+            alt="Hero Image 2"
+          />
+          <div class="container">
+            <h2 class="text-white">ترابط العائلة</h2>
+            <p class="hero-desc mb-4">
+              نوثّق لحظاتنا، ونحافظ على صلتنا عبر الأجيال.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <!-- <a class="btn btn-lg btn-primary px-4" href="#tree">استعرض الشجرة</a> -->
+              <!-- <a class="btn btn-lg btn-outline-light px-4" href="#famous">تعرف على أفراد العائلة</a> -->
+              <div class="download-btn">
+                <a class="btn btn-outline-light mx-2 mb-2" href="#features">
+                  <i class="bi bi-apple me-2"></i> تحميل من App Store
+                </a>
+                <a class="btn btn-primary mx-2 mb-2" href="#features">
+                  <i class="bi bi-google-play me-2"></i> تحميل من Google Play</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img
+            src="./images/sea-boat-vacation-celebration-vehicle-dubai-826522-pxhere.com (1).jpg"
+            class="object-fit-cover"
+            alt="Hero Image 3"
+          />
+          <div class="container">
+            <h2 class="text-white">جذور وأصالة</h2>
+            <p class="hero-desc mb-4">منصة تجمع القلوب وتبني الذكريات.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <!-- <a class="btn btn-lg btn-primary px-4" href="#tree">استعرض الشجرة</a> -->
+              <!-- <a class="btn btn-lg btn-outline-light px-4" href="#famous">تعرف على أفراد العائلة</a> -->
+              <div class="download-btn">
+                <a class="btn btn-outline-light mx-2 mb-2" href="#features">
+                  <i class="bi bi-apple me-2"></i> تحميل من App Store
+                </a>
+                <a class="btn btn-primary mx-2" href="#features">
+                  <i class="bi bi-google-play me-2"></i> تحميل من Google Play</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon w-75"
+            aria-hidden="true"
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon w-75"
+            aria-hidden="true"
+          ></span>
+        </button>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators mt-5 pt-5">
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- video -->
+
+    <section class="py-5 mt-2 bg-light" id="familyAppVideo" data-aos="fade-up">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+     
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">اكتشف فكرة تطبيقات العائلة</h2>
+        <p class="text-muted mb-4">
+          شاهد الفيديو القصير لتتعرف على كيفية تنظيم شجرة النسب، المناسبات، والذكريات الخاصة بعائلتك في تطبيق واحد آمن وسهل الاستخدام.
+        </p>
+
+        
+        <a href="booking.html" class="btn btn-primary px-5 py-3 rounded-2 fw-semibold">
+          احجز تطبيقك الآن
+        </a>
+      </div>
+
+     
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9 shadow-lg rounded-4 overflow-hidden">
+          <!-- YouTube Embed -->
+          <!-- <iframe 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="فيديو شرح تطبيقات العائلة"
+            allowfullscreen>
+          </iframe> -->
+
+      
+          
+          <video controls>
+            <source src="videos/family-app-intro.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو
+          </video>
+         
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+  
+  
+  <!--  About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center justify-between g-5">
+
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="pe-lg-5">
+              <p
+                class="text-primary fw-bold text-uppercase tracking-wider mb-3 ls-2"
+              >
+                خصوصيتكم أولاً، دائمًا
+              </p>
+
+              <h2 class="display-5 fw-bold lh-base mb-4">
+                التطبيق الذي صُمم خصيصًا للعائلات العربية
+              </h2>
+
+              <p class="lead text-muted mb-5">
+                في عالم مليء بالتطبيقات العامة، قررنا أن نصنع شيئًا مختلفًا
+                تمامًا:
+                <span class="text-dark fw-semibold"
+                  >مكان خاص 100% بعائلتكم فقط</span
+                >، لا إعلانات، لا بيع بيانات، لا غرباء.
+              </p>
+
+              <div class="row g-4">
+                <div class="col-sm-6">
+                  <div class="d-flex">
+                    <i
+                      class="bi bi-shield-lock-fill text-primary fs-2 me-4"
+                    ></i>
+                    <div>
+                      <h5 class="fw-bold mb-1">خصوصية مطلقة</h5>
+                      <p class="text-muted small mb-0">
+                        لا تخزين سحابي عام، كل شيء مشفر وملككم فقط
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex">
+                    <i
+                      class="bi bi-cloud-arrow-up-fill text-success fs-2 me-4"
+                    ></i>
+                    <div>
+                      <h5 class="fw-bold mb-1">نسخ احتياطي تلقائي</h5>
+                      <p class="text-muted small mb-0">
+                        كل ذكرى محفوظة بأمان، حتى لو غيرتي جوالك
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex">
+                    <i class="bi bi-infinity text-info fs-2 me-4"></i>
+                    <div>
+                      <h5 class="fw-bold mb-1">لا حدود للأفراد</h5>
+                      <p class="text-muted small mb-0">
+                        من الجد السابع إلى الحفيد الجديد، الكل مرحب بيه
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex">
+                    <i class="bi bi-heart-fill text-danger fs-2 me-4"></i>
+                    <div>
+                      <h5 class="fw-bold mb-1">صُنع بحب</h5>
+                      <p class="text-muted small mb-0">
+                        من عائلة عربية لكل العائلات العربية
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 text-start my-5 pt-5 mx-auto"
+            data-aos="fade-left"
+            style="margin-left: 15%"
+          >
+            <div class="phones-container position-relative" style="">
+              <div
+                class="phone-wrapper phone-front"
+                data-scroll
+                data-scroll-speed="2"
+              >
+                <div class="phone-mockup">
+                  <img
+                    src="images/app22.png"
+                    alt="شجرة النسب"
+                    class="img-fluid rounded-4"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="phone-wrapper phone-back"
+                data-scroll
+                data-scroll-speed="1"
+              >
+                <div class="phone-mockup">
+                  <img
+                    src="images/app33.png"
+                    alt="التقويم العائلي"
+                    class="img-fluid rounded-4"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- family tree -->
+    <section class="py-5 py-lg-7 position-relative overflow-hidden bg-light">
+      <div class="container">
+        <div class="row align-items-center g-5 g-xl-7">
+          <div
+            class="col-lg-6 text-start my-5 pt-5 mx-auto"
+            data-aos="fade-up"
+            data-motion="slide-up"
+            style="margin-right: 15%"
+            data-aos-delay="200"
+          >
+            <div
+              class="phones-container tree-container position-relative"
+              style="height: 550px; right: 95px"
+            >
+              <div class="phone-wrapper phone-front1">
+                <div class="phone-mockup">
+                  <img
+                    src="images/app77.png"
+                    alt="شجرة العائلة"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+
+              <div class="phone-wrapper phone-back1">
+                <div class="phone-mockup">
+                  <img
+                    src="images/app66.png"
+                    alt="إضافة فرد جديد"
+                    class="img-fluid"
+                    style="opacity: 0.3;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="pe-lg-5">
+              <p
+                class="text-primary fw-bold text-uppercase tracking-wider mb-3 ls-2"
+              >
+                الجذور لا تنقطع
+              </p>
+
+              <h2 class="display-5 fw-bold lh-base mb-4">
+                من الجدّ الأكبر الذي نسمع عن بطولاته…
+                <br class="d-none d-lg-block" />
+                إلى أحدث مولود اليوم
+              </h2>
+
+              <p class="lead text-muted mb-5">
+                لكل فرع في شجرة عائلتكم قصةٌ تستحقّ الحياة. نحن هنا لنحفظ هذه
+                القصص، نربط الأجيال بعضها ببعض، ونجعل كل فرد يعرف من هو، ومن أين
+                أتى.
+              </p>
+
+              <div class="row g-4 mt-4">
+                <div class="col-sm-6">
+                  <div class="d-flex">
+                    <i class="bi bi-diagram-3-fill text-primary fs-2 me-4"></i>
+                    <div>
+                      <h5 class="fw-bold mb-1">شجرة بلا حدود</h5>
+                      <p class="text-muted small mb-0">
+                        أضيفي الآلاف من الأفراد عبر عشرات الأجيال دون قيود
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex">
+                    <i class="bi bi-image-fill text-success fs-2 me-4"></i>
+                    <div>
+                      <h5 class="fw-bold mb-1">صور ووثائق وقصص</h5>
+                      <p class="text-muted small mb-0">
+                        ارفقي الذكريات والوثائق بجوار كل اسم في الشجرة
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+ 
+
+    <!-- Memories Gallery -->
+    <section id="memories" class="py-5" style="background: linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.9)
+  ),
+  url('./images/')  no-repeat;
+  background-postion:50% 40%">
+      <div class="container">
+        <div class="row align-items-center justify-between g-5">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pe-lg-5">
+              <p
+                class="text-primary fw-bold text-uppercase tracking-wider mb-3 ls-2"
+              >
+                صور وفيديوهات
+              </p>
+
+              <h2 class="display-5 fw-bold lh-base mb-4">
+                شارك أجمل لحظات عائلتك
+              </h2>
+
+              <p class="lead text-muted mb-5">
+                حفلات أعياد الميلاد، العطلات، لمّ شمل العائلة، الكثير من أجمل
+                اللحظات التي يمكنك مشاركتها بسهولة وخصوصية مع أحبائك.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <img
+              src="images/tab22.png"
+              alt="ذكريات"
+              class="img-fluid"
+              style="max-width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Directory Preview -->
+    <!-- <section id="directory" class="py-5 bg-light">-->
+
+
+<div class="features" id="Features">
+  <div class="container-fluid">
+    <div class="titles">
+      <p class="text-primary fw-bold text-uppercase tracking-wider mb-3 ls-2"> تطبيق العائلة</p>
+
+      <h2 class="display-5 fw-bold lh-base mb-4">
+          حيث تلتقي الأجيال وتتوارث المحبة
+      </h2>
+
+      <p class="lead text-muted mb-5">
+        أنشئ شجرة عائلتك، أضف الأجيال الجديدة، شارك الصور والذكريات، وابقَ على تواصل دائم مع كل أفراد عائلتك في مكان واحد آمن وخاص.
+      </p>
+    </div>
+
+    <div class="features-wrap-slides">
+      <div class="swiper myFamilySwiper">
+        <div class="swiper-wrapper">
+
+
+          <div class="swiper-slide">
+            <div class="row g-5 justify-content-center align-items-center">
+              <div class="mobile-box col-md-4 order-md-2">
+                <div class="feature-mockup">
+                  <img src="./images/family-tree.png" alt="شجرة العائلة">
+                </div>
+              </div>
+              <div class="col-md-4 order-md-1">
+                <div class="feature-item text-right">
+                  <img src="./images/icon5.png" alt="icon">
+                  <h3>شجرة العائلة الرقمية</h3>
+                  <p>عرض تفاعلي كامل لشجرة العائلة مع إمكانية التكبير والتنقل بين الأجيال بسهولة.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="row justify-content-center align-items-center">
+              <div class="mobile-box col-md-4 order-md-2">
+                <div class="feature-mockup">
+                  <img src="./images/user.png" alt="دليل المستخدم">
+                </div>
+              </div>
+              <div class=" col-md-4 order-md-1">
+                <div class=" feature-item text-right">
+                  <img src="./images/icon6.png" alt="icon">
+                  <h3>دليل مستخدم لكل فرد</h3>
+                  <p>جولة تعليمية داخل التطبيق توضح لكل عضو جديد كيف يستخدم الميزات بسهولة تامة.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="row justify-content-center align-items-center">
+              <div class="mobile-box col-md-4 order-md-2">
+                <div class="feature-mockup">
+                  <img src="./images/event.png" alt="وثائق">
+                </div>
+              </div>
+              <div class="col-md-4 order-md-1">
+                <div class="feature-item text-right">
+                  <img src="./images/icon3.png" alt="icon">
+                  <h3>وثائق وذكريات العائلة</h3>
+                  <p>حفظ وتنظيم شهادات الميلاد وعقود الزواج والصور في مكان واحد آمن.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="row justify-content-center align-items-center">
+              <div class="mobile-box col-md-4 order-md-2">
+                <div class="feature-mockup">
+                  <img src="./images/question.png" alt="مسابقات">
+                </div>
+              </div>
+              <div class="col-md-4 order-md-1">
+                <div class="feature-item text-right">
+                  <img src="./images/icon4.png" alt="icon">
+                  <h3>مسابقات وأسئلة يومية</h3>
+                  <p>سؤال يومي من القرآن والسنة يجمع العائلة على الخير والعلم والأجر المشترك.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="swiper-slide">
+            <div class="row justify-content-center align-items-center">
+              <div class="mobile-box col-md-4 order-md-2">
+                <div class="feature-mockup">
+                  <img src="./images/box.png" alt="صندوق الأسرة">
+                </div>
+              </div>
+              <div class="col-md-4 order-md-1">
+                <div class="feature-item text-right">
+                  <img src="https://ansab.io/wp-content/themes/ibtikarat-ansab/assets/img/8.png" alt="">
+                  <h3>صندوق الأسرة الخيري</h3>
+                  <p>جمع التبرعات ودعم أفراد العائلة والمشاريع الخيرية بكل شفافية.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Features Slider -->
+<div class="features" id="features2">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-6">
+      <div class="col-lg-9">
+        <p class="text-primary fw-bold text-uppercase tracking-wider mb-3">مميزات التطبيق</p>
+        <h2 class="display-5 fw-bold mb-4" >كل ما تحتاجه عائلتك في مكان واحد</h2>
+        <p class="lead text-muted">تطبيق مصمم خصيصًا للعائلات الخليجية الكبيرة بكل حب واهتمام</p>
+      </div>
+    </div>
+
+    <div class="swiper featuresSwiper">
+      <div class="swiper-wrapper">
+
+
+        <div class="swiper-slide">
+          <div class="feature-card h-100 d-flex flex-column justify-content-center text-center p-5">
+            <div class="icon-circle mb-4" style="background-color:#C1785A  ;">
+              <i class="bi bi-tree-fill text-white"></i>
+            </div>
+            <h4 class="fw-bold mb-2 fixed-height-title">شجرة العائلة</h4>
+            <p class="text-muted desc-text">أضف آلاف الأفراد عبر عشرات الأجيال بكل سهولة</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="feature-card h-100 d-flex flex-column justify-content-center text-center p-5">
+            <div class="icon-circle mb-4" style="background-color: #F5CBCB;">
+              <i class="bi bi-person-hearts text-white"></i>
+            </div>
+            <h4 class="fw-bold mb-2 fixed-height-title">دليل ذكي</h4>
+            <p class="text-muted desc-text">جولة تعليمية توضح لكل عضو جديد كيف يستخدم التطبيق</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="feature-card h-100 d-flex flex-column justify-content-center text-center p-5">
+            <div class="icon-circle mb-4" style="background-color: #9ECAD6;">
+              <i class="bi bi-images text-white"></i>
+            </div>
+            <h4 class="fw-bold mb-2 fixed-height-title">ألبومات الذكريات</h4>
+            <p class="text-muted desc-text">صور وفيديوهات ووثائق في مكان آمن ومشفر</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="feature-card h-100 d-flex flex-column justify-content-center text-center p-5">
+            <div class="icon-circle mb-4" style="background-color: #EBD6FB ;">
+              <i class="bi bi-calendar-heart text-white"></i>
+            </div>
+            <h4 class="fw-bold mb-2 fixed-height-title">تقويم عائلي</h4>
+            <p class="text-muted desc-text">أعياد ميلاد، ذكريات سنوية، مناسبات مع تذكيرات تلقائية</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="feature-card h-100 d-flex flex-column justify-content-center text-center p-5">
+            <div class="icon-circle mb-4" style="background-color:#A3D78A ;">
+              <i class="bi bi-shield-lock-fill text-white"></i>
+            </div>
+            <h4 class="fw-bold mb-2 fixed-height-title">خصوصية مطلقة</h4>
+            <p class="text-muted desc-text">لا إعلانات، لا بيع بيانات، كل شيء ملكك أنت وعائلتك فقط</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+      <!-- <div class="swiper-button-next text-primary"></div>
+      <div class="swiper-button-prev text-primary"></div> -->
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Final Section   -->
+    <section class="py-5 py-lg-7 bg-light position-relative overflow-hidden">
+      <div class="container position-relative z-2">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="display-5 fw-bold mb-4">
+              حافظ على تنظيم عائلتك من أي جهاز
+            </h2>
+            <p class="lead mb-5 opacity-90">
+              حمّل تطبيق «العائلة» مجانًا الآن واستمتع بكل المزايا التي صُممت
+              خصيصًا للعائلات العربية
+            </p>
+
+            <div class="d-flex flex-column flex-sm-row gap-3 mb-5">
+              <a
+                href="#"
+                class="btn btn-outline-light text-primary btn-lg px-5 py-3 shadow-lg"
+              >
+                <i class="bi bi-person-plus-fill me-2"></i>
+                سجّل الآن مجانًا
+              </a>
+            </div>
+
+            <p class="mb-3 fw-semibold opacity-90">متوفر على:</p>
+            <div class="d-flex flex-wrap gap-4">
+              <a
+                href="#"
+                class="d-flex align-items-center text-primary text-decoration-none hover-lift"
+              >
+                <i class="bi bi-apple fs-1 me-3"></i>
+                <div>
+                  <small class="d-block opacity-75">تحميل من</small>
+                  <span class="fw-bold">App Store</span>
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="d-flex align-items-center text-primary text-decoration-none hover-lift"
+              >
+                <i class="bi bi-google-play fs-1 me-3"></i>
+                <div>
+                  <small class="d-block opacity-75">احصل عليه من</small>
+                  <span class="fw-bold">Google Play</span>
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="d-flex align-items-center text-primary text-decoration-none hover-lift"
+              >
+                <i class="bi bi-laptop fs-1 me-3"></i>
+                <div>
+                  <small class="d-block opacity-75">استخدمه من</small>
+                  <span class="fw-bold">المتصفح</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- -->
+          <div
+            class="col-lg-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="images/tab3.png"
+              alt="تطبيق العائلة على كل الأجهزة"
+              class="img-fluid"
+              style="max-width: 70%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="position-absolute final-bg top-0 start-0 w-100 h-100 opacity-10"
+      >
+        <svg viewBox="0 0 1200 800" class="w-100 h-100">
+          <circle cx="200" cy="200" r="300" fill="white" />
+          <circle cx="1000" cy="600" r="400" fill="white" />
+        </svg>
+      </div>
+    </section>
+
+ 
+    <!-- Footer -->
+    <footer class="py-5 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <img
+              src="images/family-logo3-removebg-preview.png"
+              alt="عائلتي"
+              width="80"
+              class="mb-3"
+            />
+            <p>تطبيق العائلة يحافظ على الترابط والذكريات بأمان تام.</p>
+          </div>
+          <div class="col-lg-4">
+            <h5>روابط سريعة</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50">سياسة الخصوصية</a></li>
+              <li><a href="#" class="text-white-50">شروط الاستخدام</a></li>
+              <li><a href="#" class="text-white-50">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5>تابعنا</h5>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <!-- <p class="text-center mb-0">
+          &copy; 2025 Puresoft - جميع الحقوق محفوظة
+        </p> -->
+        <p class="text-center mb-0">
+         إحدى منتجات شركة <a href="https://pure-soft.com"  target="_blank" class=" text-primary"> PureSoft </a>
+        </p>
+      </div>
+    </footer>
+
+
+
+<div class="whatsapp-chat-btn">
+  <a href="https://wa.me/" target="_blank" aria-label="تواصل معنا عبر واتساب">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="38" height="38" fill="#fff">
+      <path d="M400 26.2c-193.3 0-350 156.7-350 350 0 136.2 77.9 254.3 191.5 312.1 15.4 8.1 31.4 15.1 48.1 20.8l-16.5 63.5c-2 7.8 5.4 14.7 13 12.1l229.8-77.6c14.6-5.3 28.8-11.6 42.4-18.7C672 630.6 750 512.5 750 376.2c0-193.3-156.7-350-350-350zm211.1 510.7c-10.8 26.5-41.9 77.2-121.5 77.2-79.9 0-110.9-51-121.6-77.4-2.8-6.8 5-13.4 13.8-11.8 76.2 13.7 147.7 13 215.3.3 8.9-1.8 16.8 4.8 14 11.7z"/>
+    </svg>
+  </a>
+</div>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+    
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    new Swiper('.myFamilySwiper', {
+      speed: 1200,
+      loop: true,
+      grabCursor: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+</script>
+
+
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".phones-container",
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: 1.3,
+            // markers: true
+          },
+        })
+
+        .to(
+          ".phone-front",
+          {
+            xPercent: 50,
+            ease: "none",
+          },
+          0
+        )
+
+        .to(".phone-back", {}, 0);
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".phones-container",
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: 1.3,
+            // markers: true
+          },
+        })
+        .to(
+          ".phone-front1",
+          {
+            xPercent: 50,
+            ease: "none",
+          },
+          0
+        )
+
+        .to(".phone-back1", {}, 0);
+    </script>
+
+    <script>
+  var featuresSwiper = new Swiper(".featuresSwiper", {
+    loop: true,
+    autoplay: { delay: 4000, disableOnInteraction: false },
+    speed: 1000,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+      1200: { slidesPerView: 4 }
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: { el: ".swiper-pagination", clickable: true },
+    rtl: true
+  });
+</script>
+  </body>
+</html>

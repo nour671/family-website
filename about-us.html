@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>التطبيق الأول لتنظيم وتوثيق العائلة الخليجية</title>
+    <meta
+      name="description"
+      content="تطبيق عائلي خليجي يجمع شجرة النسب، الذكريات، التقويم، المهام في مكان واحد آمن."
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap 5.3 RTL + Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    
+<nav class="navbar navbar-expand-lg fixed-top " id="mainNavbar" style="background: rgba(255,255,255,0.95); ">
+  <div class="container position-relative">
+
+
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/family-logo3-removebg-preview.png" alt="شعار العائلة" width="45" height="45" class="rounded-circle">
+      <span class="fw-bold text-primary d-none d-md-inline" style="font-size: 1.3rem;">العائلة</span>
+    </a>
+
+
+    <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-2 gap-lg-4">
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3 " href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3 active" href="about-us.html">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="family-app.html">التطبيقات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="contact-us.html">تواصل معنا</a>
+        </li>
+      </ul>
+
+    
+       <a href="#" class="btn d-none d-lg-block" id="loginTransparent"
+              >تسجيل الدخول</a
+        >
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" style="width: 280px;">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title fw-bold text-primary">القائمة</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body pt-4">
+    <ul class="navbar-nav gap-3">
+      <li><a class="nav-link text-dark fs-5" href="index.html">الرئيسية</a></li>
+      <li><a class="nav-link text-dark fs-5" href="about-us.html">من نحن</a></li>
+      <li><a class="nav-link text-dark fs-5" href="family-app.html">التطبيقات</a></li>
+      <li><a class="nav-link text-dark fs-5" href="contact-us.html">تواصل معنا</a></li>
+      <li class="mt-4">
+        <a href="#" class="btn btn-primary w-100 ">تسجيل الدخول</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <!-- Hero -->
+  <section class="about-hero " style="background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url('./images/about6.jpg') center/cover no-repeat;
+  background-position:50% 10%; " data-aos="fade-down">
+    <div class="container">
+      <h1> من نحن </h1>
+    </div>
+  </section>
+
+
+<section class="py-5 py-lg-7 bg-light">
+  <div class="container">
+    <div class="row align-items-center g-5 g-xl-7">
+
+      <!-- Content -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="pe-lg-5">
+          
+          <h2 class="display-5 fw-bold text-primary mb-4">
+            من نحن -- <span class="text-gradient">بيور سوفت</span>
+          </h2>
+
+          <p class="lead fs-4 text-dark mb-4">
+            نحن شركة متخصصة في برمجة تطبيقات الأسرة الذكية، نصمم حلولاً رقمية تعزز الترابط، 
+            تحفظ الذكريات، وتبني بيئة آمنة تجمع العائلة في مساحة خاصة بها.
+          </p>
+
+          <p class="fs-5 text-muted mb-4">
+            خلال رحلتنا الطويلة في تطوير تطبيقات العائلات، اكتشفنا أن الأسر العربية لا تبحث 
+            فقط عن تطبيق تقني، بل عن <strong>مساحة موثوقة تحفظ تاريخها</strong>، 
+            <strong>توثّق شجرة نسبها</strong>، 
+            <strong>تحمي صورها وذكرياتها بخصوصية عالية</strong>، 
+            وتمنحها وسيلة سهلة لتنظيم المناسبات والاجتماعات العائلية 
+            دون تعقيد أو مخاوف أمنية.
+            <br><br>
+            لذلك عملنا على بناء منصات عائلية تجمع بين التقنية المتقدمة والقيم الأصيلة، 
+            لتلبية احتياجات الأسرة الحديثة من توثيق، وتنظيم، وتواصل، وأمان رقمي كامل.
+          </p>
+
+          <p class="fs-5 text-muted mb-4">
+            ثقة العائلات بنا لم تأتِ صدفة، بل نتيجة التزامنا بأعلى معايير 
+            الحماية والخصوصية، وفهمنا العميق لطبيعة العلاقات الأسرية 
+            وأهمية الحفاظ عليها عبر الأجيال.
+          </p>
+
+          <div class="mt-5">
+            <a href="booking.html" class="btn btn-primary btn-lg px-5 shadow">
+              كن جزءًا من رحلتنا
+              <i class="bi bi-arrow-left ms-2"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="text-center">
+          <img src="./images/about222.jpg"
+               alt="فريق بيور سوفت - مطورو تطبيقات العائلة العربية"
+               class="img-fluid rounded-4 shadow-lg w-100"
+               style="max-height: 550px; object-fit: cover;">
+
+          <div class="mt-4">
+            <p class="text-muted mb-2">
+              الكثير من العائلات العربية تثق بنا وتستخدم تطبيقاتنا يوميًا
+            </p>
+
+            <div class="d-flex justify-content-center gap-4 fs-3 text-primary">
+              <i class="bi bi-heart-fill"></i>
+              <i class="bi bi-people-fill"></i>
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="py-5 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <img
+              src="images/family-logo3-removebg-preview.png"
+              alt="عائلتي"
+              width="80"
+              class="mb-3"
+            />
+            <p>تطبيق العائلة يحافظ على الترابط والذكريات بأمان تام.</p>
+          </div>
+          <div class="col-lg-4">
+            <h5>روابط سريعة</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50">سياسة الخصوصية</a></li>
+              <li><a href="#" class="text-white-50">شروط الاستخدام</a></li>
+              <li><a href="#" class="text-white-50">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5>تابعنا</h5>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <p class="text-center mb-0">
+          &copy; 2025 Puresoft - جميع الحقوق محفوظة
+        </p>
+      </div>
+    </footer>
+
+    
+<div class="whatsapp-chat-btn">
+  <a href="https://wa.me/" target="_blank" aria-label="تواصل معنا عبر واتساب">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="38" height="38" fill="#fff">
+      <path d="M400 26.2c-193.3 0-350 156.7-350 350 0 136.2 77.9 254.3 191.5 312.1 15.4 8.1 31.4 15.1 48.1 20.8l-16.5 63.5c-2 7.8 5.4 14.7 13 12.1l229.8-77.6c14.6-5.3 28.8-11.6 42.4-18.7C672 630.6 750 512.5 750 376.2c0-193.3-156.7-350-350-350zm211.1 510.7c-10.8 26.5-41.9 77.2-121.5 77.2-79.9 0-110.9-51-121.6-77.4-2.8-6.8 5-13.4 13.8-11.8 76.2 13.7 147.7 13 215.3.3 8.9-1.8 16.8 4.8 14 11.7z"/>
+    </svg>
+  </a>
+</div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: false, mirror: true });
+  </script>
+</body>
+</html>

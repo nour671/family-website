@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>التطبيق الأول لتنظيم وتوثيق العائلة الخليجية</title>
+    <meta
+      name="description"
+      content="تطبيق عائلي خليجي يجمع شجرة النسب، الذكريات، التقويم، المهام في مكان واحد آمن."
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap 5.3 RTL + Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+<!--     
+  <style>
+
+
+
+    .phone-mockup {
+  
+  margin: 0 auto;
+  border: 12px solid #000;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+  text-align: center;
+  padding: 10px;
+  max-width: 90% !important;
+  max-height: 70% !important;
+    width: 70%;
+    height: 20%;
+    background: #555;
+    border-radius: 20px;
+    /* padding: 5px; */
+    position: relative;
+    border: 1px solid #333;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+.phone-mockup:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.phone-mockup img {
+  width: 100%;
+  height: auto;
+  display: block;
+   max-width: 100%;
+  height: 60%;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(74, 144, 226, 0.15); 
+  transition: all 0.4s ease;
+  border: 1px solid #e8f4fd;
+}
+
+.application-hero {
+
+      color: #fff;
+      padding: 140px 0 100px;
+      text-align: center;
+      background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url('./images/application1.jpg') center/cover no-repeat;
+      background-position: 50% 20%;
+    }
+    .application-hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      
+    }
+    .application-hero p { font-size: 1.3rem; max-width: 700px; margin: 0 auto; }
+
+    .phoneSwiper:hover {
+      cursor: grab;
+    }
+
+
+  .swiper-pagination-bullet {
+    background: #1c1c1c !important;
+    opacity: 0.5;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--primary) !important;
+  }
+
+
+  </style> -->
+</head>
+<body>
+
+    <!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg fixed-top " id="mainNavbar" style="background: rgba(255,255,255,0.95); ">
+  <div class="container position-relative">
+
+
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/family-logo3-removebg-preview.png" alt="شعار العائلة" width="45" height="45" class="rounded-circle">
+      <span class="fw-bold text-primary d-none d-md-inline" style="font-size: 1.3rem;">العائلة</span>
+    </a>
+
+
+    <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-2 gap-lg-4">
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3 " href="https://designs.sys-web.net/family/index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="https://designs.sys-web.net/family/about-us.html">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3 active" href="https://designs.sys-web.net/family/family-app.html">التطبيقات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="https://designs.sys-web.net/family/contact-us.html">تواصل معنا</a>
+        </li>
+      </ul>
+
+    
+       <a href="#" class="btn d-none d-lg-block" id="loginTransparent"
+              >تسجيل الدخول</a
+        >
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" style="width: 280px;">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title fw-bold text-primary">القائمة</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body pt-4">
+    <ul class="navbar-nav gap-3">
+      <li><a class="nav-link text-dark fs-5" href="index.html">الرئيسية</a></li>
+      <li><a class="nav-link text-dark fs-5" href="about-us.html">من نحن</a></li>
+      <li><a class="nav-link text-dark fs-5" href="family-app.html">التطبيقات</a></li>
+      <li><a class="nav-link text-dark fs-5" href="contact-us.html">تواصل معنا</a></li>
+      <li class="mt-4">
+        <a href="#" class="btn btn-primary w-100 ">تسجيل الدخول</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  <section class="application-hero " style=" " data-aos="fade-down">
+    
+    <div class="row justify-content-center text-center mb-6">
+      <div class="col-lg-8 mb-5">
+        <h2 class="display-5 fw-bold mb-4">
+          اكتشف تطبيق <span class="text-primary">«العائلة»</span> من الداخل
+        </h2>
+        <p class="lead opacity-85">
+          تصفّح أجمل وأسهل واجهات التطبيق التي صُممت خصيصًا للعائلات العربية الكبيرة
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+<main  style=" background: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  ),
+  url('./images/') center/cover no-repeat;
+      background-position: 50% 50%; ">
+
+  <section class="features-clean py-5 py-lg-8" id="almaajel" style=" background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  ),
+  url('./images/b_2.jpg') center/cover no-repeat;
+      background-position: 50% 20%;">
+  <div class="container">
+
+    <!-- 1. al-maajel -->
+    <div class="row align-items-center g-5 my-5">
+     <div class="col-lg-8" data-aos="fade-right">
+    <h3 class="display-5 fw-bold text-dark mb-4">تطبيق المعجل </h3>
+    <p class="lead text-muted mb-4">
+      أول تطبيق عربي شامل لتوثيق النسب والأنساب والمصاهرة، يجمع العائلة الواحدة<br> في شجرة رقمية تفاعلية دقيقة ومحدثة لحظيًا، مع أعلى معايير الخصوصية والأمان.
+    </p>
+    <p class="text-muted mb-5" style="font-size: 1.15rem;">
+      • شجرة نسب كاملة بجميع الفروع والأصهار<br>
+      • صفحات خاصة لكل فرد مع الصور والوثائق والسيرة<br>
+      • تقويم عائلي مشترك وتذكيرات تلقائية<br>
+      • مجلة شهرية احترافية لأخبار العائلة<br>
+      • صندوق دعم سري لأفراد العائلة<br>
+      • لا إعلانات ولا بيع بيانات أبدًا
+    </p>
+
+    <div class= "mt-5"  data-aos-delay="100">
+      <h3 class="fw-bold mb-4">حمّل التطبيق الآن</h3>
+      <div class="d-inline-flex gap-4 flex-wrap ">
+        <a href="#" class="btn btn-primary btn-lg px-5 py-2  shadow-lg">
+          <i class="bi bi-apple fs-3"></i> App Store
+        </a>
+        <a href="#" class="btn btn-outline-dark btn-lg py-2  shadow-lg" style="padding-inline: 2.5rem;">
+          <i class="bi bi-google-play fs-3"></i> Google Play
+        </a>
+      </div>
+    </div>
+
+  </div>
+      <div class="col-lg-4 col-sm-6 col-10 mx-auto" data-aos="fade-left" data-aos-delay="200">
+  <div class="phone-mockup position-relative">
+
+    <div class="swiper phoneSwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="./images/features.png" class="img-fluid rounded-4" alt=" العائلة 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/family-tree.png" class="img-fluid rounded-4" alt=" العائلة 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/event.png" class="img-fluid rounded-4" alt=" العائلة 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/question.png" class="img-fluid rounded-4" alt=" العائلة 3">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/box.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/magazine.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/user.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/users.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+      </div>
+     
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+  </div>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+  <section class="features-clean py-5 py-lg-8" id="albaptain" style="  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  ),
+  url('./images/b_2.jpg') center/cover no-repeat;
+      background-position: 50% 20%; ">
+  <div class="container">
+    <!-- 1. al-baptain -->
+    <div class="row align-items-center g-5 my-5  " >
+     <div class="col-lg-8" data-aos="fade-right">
+    <h3 class="display-5 fw-bold text-dark mb-4">تطبيق البابطين </h3>
+    <p class="lead text-muted mb-4">
+      أول تطبيق عربي شامل لتوثيق النسب والأنساب والمصاهرة، يجمع العائلة الواحدة<br> في شجرة رقمية تفاعلية دقيقة ومحدثة لحظيًا، مع أعلى معايير الخصوصية والأمان.
+    </p>
+    <p class="text-muted mb-5" style="font-size: 1.15rem;">
+      • شجرة نسب كاملة بجميع الفروع والأصهار<br>
+      • صفحات خاصة لكل فرد مع الصور والوثائق والسيرة<br>
+      • تقويم عائلي مشترك وتذكيرات تلقائية<br>
+      • مجلة شهرية احترافية لأخبار العائلة<br>
+      • صندوق دعم سري لأفراد العائلة<br>
+      • لا إعلانات ولا بيع بيانات أبدًا
+    </p>
+
+    <div class= "mt-5"  data-aos-delay="100">
+      <h3 class="fw-bold mb-4">حمّل التطبيق الآن</h3>
+      <div class="d-inline-flex gap-4 flex-wrap ">
+        <a href="#" class="btn btn-primary btn-lg px-5 py-2  shadow-lg">
+          <i class="bi bi-apple fs-3"></i> App Store
+        </a>
+        <a href="#" class="btn btn-outline-dark btn-lg py-2  shadow-lg" style="padding-inline: 2.5rem;">
+          <i class="bi bi-google-play fs-3"></i> Google Play
+        </a>
+      </div>
+    </div>
+
+  </div>
+      <div class="col-lg-4 col-sm-6 col-10 mx-auto" data-aos="fade-left" data-aos-delay="200">
+  <div class="phone-mockup position-relative">
+
+    <div class="swiper phoneSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/family-tree.png" class="img-fluid rounded-4" alt=" العائلة 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/event.png" class="img-fluid rounded-4" alt=" العائلة 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/question.png" class="img-fluid rounded-4" alt=" العائلة 3">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/box.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/magazine.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/user.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/users.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+      </div>
+
+    </div>
+  </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  </section>
+
+  <section class="features-clean py-5 py-lg-8" id="almousa" style=" background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  ),
+  url('./images/b_2.jpg') center/cover no-repeat;
+      background-position: 50% 20%;">
+  <div class="container">
+
+
+    <!-- 1. al-mousa -->
+    <div class="row align-items-center g-5 my-5">
+     <div class="col-lg-8" data-aos="fade-right">
+    <h3 class="display-5 fw-bold text-dark mb-4">تطبيق الموسى </h3>
+    <p class="lead text-muted mb-4">
+      أول تطبيق عربي شامل لتوثيق النسب والأنساب والمصاهرة، يجمع العائلة الواحدة<br> في شجرة رقمية تفاعلية دقيقة ومحدثة لحظيًا، مع أعلى معايير الخصوصية والأمان.
+    </p>
+    <p class="text-muted mb-5" style="font-size: 1.15rem;">
+      • شجرة نسب كاملة بجميع الفروع والأصهار<br>
+      • صفحات خاصة لكل فرد مع الصور والوثائق والسيرة<br>
+      • تقويم عائلي مشترك وتذكيرات تلقائية<br>
+      • مجلة شهرية احترافية لأخبار العائلة<br>
+      • صندوق دعم سري لأفراد العائلة<br>
+      • لا إعلانات ولا بيع بيانات أبدًا
+    </p>
+
+    <div class= "mt-5"  data-aos-delay="100">
+      <h3 class="fw-bold mb-4">حمّل التطبيق الآن</h3>
+      <div class="d-inline-flex gap-4 flex-wrap ">
+        <a href="#" class="btn btn-primary btn-lg px-5 py-2  shadow-lg">
+          <i class="bi bi-apple fs-3"></i> App Store
+        </a>
+        <a href="#" class="btn btn-outline-dark btn-lg py-2  shadow-lg" style="padding-inline: 2.5rem;">
+          <i class="bi bi-google-play fs-3"></i> Google Play
+        </a>
+      </div>
+    </div>
+
+  </div>
+      <div class="col-lg-4 col-sm-6 col-10 mx-auto" data-aos="fade-left" data-aos-delay="200">
+  <div class="phone-mockup position-relative">
+
+    <div class="swiper phoneSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/family-tree.png" class="img-fluid rounded-4" alt=" العائلة 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/event.png" class="img-fluid rounded-4" alt=" العائلة 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/question.png" class="img-fluid rounded-4" alt=" العائلة 3">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/box.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/magazine.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/user.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/users.png" class="img-fluid rounded-4" alt=" العائلة 4">
+        </div>
+      </div>
+     
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+  </div>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+
+</main>
+
+
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-2 text-white">
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <img src="images/family-logo3-removebg-preview.png" alt="عائلتي" width="80" class="mb-3">
+          <p>تطبيق العائلة يحافظ على الترابط والذكريات بأمان تام.</p>
+        </div>
+        <div class="col-lg-4">
+          <h5>روابط سريعة</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50">سياسة الخصوصية</a></li>
+            <li><a href="#" class="text-white-50">شروط الاستخدام</a></li>
+            <li><a href="#" class="text-white-50">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>تابعنا</h5>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="text-center mb-0">&copy; 2025 Puresoft - جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <div class="whatsapp-chat-btn">
+  <a href="https://wa.me/966501234567" target="_blank" aria-label="تواصل معنا عبر واتساب">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="38" height="38" fill="#fff">
+      <path d="M400 26.2c-193.3 0-350 156.7-350 350 0 136.2 77.9 254.3 191.5 312.1 15.4 8.1 31.4 15.1 48.1 20.8l-16.5 63.5c-2 7.8 5.4 14.7 13 12.1l229.8-77.6c14.6-5.3 28.8-11.6 42.4-18.7C672 630.6 750 512.5 750 376.2c0-193.3-156.7-350-350-350zm211.1 510.7c-10.8 26.5-41.9 77.2-121.5 77.2-79.9 0-110.9-51-121.6-77.4-2.8-6.8 5-13.4 13.8-11.8 76.2 13.7 147.7 13 215.3.3 8.9-1.8 16.8 4.8 14 11.7z"/>
+    </svg>
+  </a>
+</div>
+
+
+  <!--  JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- AOS Animation -->
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+ <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".phoneSwiper", {
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      effect: "slide", 
+      fadeEffect: { crossFade: true }
+    });
+  });
+</script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,       
+    easing: 'ease-out',   
+    once: false,         
+    mirror: true,        
+    offset: 120
+  });
+</script>
+</body>
+</html>
